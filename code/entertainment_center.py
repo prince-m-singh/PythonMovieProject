@@ -1,10 +1,14 @@
+#coding = utf-8
+
 import media
 import fresh_tomatoes
+
 # ToyStory
 toy_story = media.Movie("Toystory",
                         "a story of boy",
                         "http://www.impawards.com/1995/posters/toy_story_ver1_xlg.jpg",
                         "https://www.youtube.com/watch?v=KYz2wyBy3kc")
+
 # Avatar Movie
 avatar = media.Movie("Avatar",
                      "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
@@ -23,5 +27,7 @@ ggv2 = media.Movie("Guardians of the Galaxy Vol. 2 ",
                    "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg2MzI1MTg3OF5BMl5BanBnXkFtZTgwNTU3NDA2MTI@._V1_QL50_SY1000_CR0,0,674,1000_AL_.jpg",
                    "https://www.youtube.com/watch?v=dW1BIid8Osg")
 
+# making the list of all media.Movie object
 movie = [toy_story, avatar, xxx, ggv2]
+# movie list pass through open_movie_page
 fresh_tomatoes.open_movies_page(movie)
